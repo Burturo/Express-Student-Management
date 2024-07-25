@@ -1,0 +1,61 @@
+*{
+font-family: Lato;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000 !important;
+}
+.conteneur{
+    width: 55%;
+    height: auto;
+    background-color: #DCEEFB !important;
+}
+.conteneur-inscription{
+    width: 65%;
+    height: auto;
+    background-color: #DAE7F2 !important;
+}
+h2{
+    font-family: Raleway;
+    font-weight: bold !important;
+}
+.form-control{
+    font-family: Raleway;
+}
+.image-connexion{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px 0.20rem 0.20rem 20px;
+}
+.image{
+    height: 100%;
+    width: 100%;
+}
+.img-logo{
+    background-size: cover;
+}
+.image-inscription{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 0.375rem 0.375rem 20px;
+    background-image: url(./Image/Programme_in_CS.jpg);
+    background-size: cover;
+}
+.btn-bleu{
+    background: #439BDA !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+.register-link {
+    color: #439BDA;
+    text-decoration: none; /* Pour supprimer le soulignement du lien */
+}
+.register-link:hover {
+color: blue; /* Couleur lors du survol */
+}

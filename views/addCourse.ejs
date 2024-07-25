@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envoyer un cours</title>
+    
+    <link rel="stylesheet" href="/stylesheets/SidebarTest.css">
+    <link href="/lib/fontawesome-free-6.5.2-web/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/lib/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+        <div class="sidebar close" id="side_nav">
+            <div class="logo-details py-2">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span class="logo_name">Cours_Travaux</span>
+                <i class="fa-solid ms-5  fa-xmark btn-ferme" type="button"></i>
+            </div>
+            <div class="profile mt-2 p-2">
+                <img height="32px" class="img-profile" src="/images/luffy.jpg"></i>
+                <span class="profile_name ms-3">Monkey d Luffy</span>
+                <i class="fa-solid ms-5  fa-xmark btn-ferme" type="button"></i>
+            </div>
+            <ul class="nav-links">
+                <li class="active">
+                    <a style="height: 50px;">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="link_name">Tableau de bord</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name title-hover">Tableau de bord</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class="fa-solid fa-user-graduate"></i>
+                            <span class="link_name">Cours</span>
+                        </a>
+                        <i class="fa fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li>
+                            <a class="link_name title-hover titre border-bottom border-white mb-2" href="#">Cours</a>
+                        </li>
+                        <li>
+                            <a>Liste des cours</a>
+                        </li>
+                        <li>
+                            <a>Envoyé un cours</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                            <span class="link_name">Travaux</span>
+                        </a>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li>
+                            <a class="link_name title-hover titre border-bottom border-white mb-2" href="#">Travaux</a>
+                        </li>
+                        <li>
+                            <a>Liste des travaux</a>
+                        </li>
+                        <li>
+                            <a>Envoyé un travail</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer">
+                    <div class="footer-details">
+                        <a href="/logout">
+                            <div class="footer-content">
+                                <img src="/images/box-arrow-right.svg" alt="footer">
+                            </div>
+        
+                            <div class="name-job">
+                                <div class="footer_name">Se déconnecter</div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="home-section">
+            <nav class="navbar navbar-expand-md other position-fixed shadow">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between d-md-none d-block">
+                        <button class="btn px-1 py-0 open-btn me-2 side_btn" type="button"><i class="fa fa-stream"></i></button>
+                    </div>
+                    <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-angle-down rotate-icon"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-element">
+                            <div class="col d-flex align-items-center">
+                                <i class="fa-solid fa-bars-staggered fa-bars"></i>
+                                <h5 class="m-0 ms-3">Tableau de bord</h5>
+                            </div>
+                            <div class="col-1 d-flex justify-content-between ">
+                                <div class="notification">
+                                    <i class="bi bi-bell"></i>
+                                </div>
+                                <button class="btn p-0 dropdown-toggle" type="button" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fr
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><button class="dropdown-item"><img width="25px" src="/img/fr.png"> French</button></li>
+                                    <li><button class="dropdown-item"><img width="25px" src="/img/en.png"> English</button></li>
+                                </ul>
+                                
+                                <i class="bi bi-gear"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="scroolAsignSubj h-100 px-4 pt-5 haut-rendbody">
+                <div class="card-index shadow col-9  mx-auto p-4">
+                    
+                    <h4 class="border-bottom border-black mb-2">Envoyé un courrier</h1>
+                        
+                        <div class="d-flex justify-content-between mt-4 ">
+                            <div class="col-6 me-2 g-2">
+                                <!-- <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Numéro courrier :</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Numéro">
+                                </div> -->
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Catégorie :</label>
+                                    <select class="form-select" required name="cate" aria-label="Default select example">
+                                        <option selected>Sélectionner une catégorie</option>
+                                        <option value="1">Enveloppe</option>
+                                        <option value="2">Chemise</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Direction</label>
+                                    <select class="form-select" required aria-label="Default select example" name="direction">
+                                        <option selected>Sélectionner la Direction</option>
+                                    </select>
+                                </div>
+                                
+                                
+                                
+                            </div>
+                            <div class="col-6">
+                                <label for="exampleFormControlInput1" class="form-label">Type de courrier :</label>
+                                <select class="form-select" required name="type" aria-label="Default select example">
+                                    <option selected>Sélectionner le type</option>
+                                    <option value="1">Travaux Dirrigé</option>
+                                    <option value="2">Travaux Pratique</option>
+                                </select>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Objet</label>
+                            <textarea class="form-control" required name="objet" id="exampleFormControlTextarea1" rows="3" style="height:20px"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Observation</label>
+                            <textarea class="form-control" name="observ" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="d-flex col-5">
+                                <a href="layout_Listcourriers.php" asp-action="Index" class="btn btn-outline-dark me-2 w-100">Annuler</a>
+                                <input class="btn btn-success w-100"  name="submit" type="submit" value="Envoyer" />
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    
+    
+        <script src="/javascripts/SidebarTest.js" asp-append-version="true"></script>
+        <script src="/javascripts/bootstrap.min.js" asp-append-version="true"></script>
+        <script src="/javascripts/jquery.min.js" asp-append-version="true"></script>
+</body>
+</html>
